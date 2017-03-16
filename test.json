@@ -1,0 +1,79 @@
+{
+  "unites" : [
+    { "type" : "archers",
+      "nombre" : 6,
+      "vitesse_deplacement" : 5,
+      "vitesse_attaque" : 1,
+      "points_vie" : 30,
+      "est_unite_distance" : true,
+      "portée_attaque" : 30,
+      "champs_de_vision" : 80,
+      "moral" : 50,
+      "armure" : 5,
+      "resistance_magie" : 5,
+      "points_magie" : 0,
+      "degats_magie" : 0,
+      "est_unite_magique" : false,
+
+      "cout_recrutement" : 20,
+
+      "anim_path" : "sprites/archer/anim"
+    },
+    {
+      "type" : "lanciers",
+      "nombre" : 6,
+      "vitesse_deplacement" : 2,
+      "vitesse_attaque" : 1,
+      "points_vie" : 50,
+      "est_unite_distance" : false,
+      "portée_attaque" : 5,
+      "champs_de_vision" : 50,
+      "moral" : 70,
+      "armure" : 20,
+      "resistance_magie" : 20,
+      "points_magie" : 0,
+      "degats_magie" : 0,
+      "est_unite_magique" : false,
+
+      "cout_recrutement" : 50
+    },
+    {
+      "type" : "epeistes",
+      "nombre" : 6,
+      "vitesse_deplacement" : 2,
+      "vitesse_attaque" : 2,
+      "points_vie" : 50,
+      "est_unite_distance" : false,
+      "portée_attaque" : 5,
+      "champs_de_vision" : 50,
+      "moral" : 70,
+      "armure" : 40,
+      "resistance_magie" : 30,
+      "points_magie" : 0,
+      "degats_magie" : 0,
+      "est_unite_magique" : false,
+
+      "cout_recrutement" : 70,
+      "anim_path" : "sprites/epeiste/anim"
+    },
+    {
+      "type" : "cavaliers",
+      "nombre" : 3,
+      "vitesse_deplacement" : 10,
+      "vitesse_attaque" : 5,
+      "points_vie" : 90,
+      "est_unite_distance" : false,
+      "portée_attaque" : 5,
+      "champs_de_vision" : 50,
+      "moral" : 100,
+      "armure" : 50,
+      "resistance_magie" : 50,
+      "points_magie" : 0,
+      "degats_magie" : 0,
+      "est_unite_magique" : false,
+
+      "cout_recrutement" : 100,
+      "anim_path" : "sprites/knight/anim"
+    }
+  ]
+}
