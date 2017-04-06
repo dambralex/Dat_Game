@@ -24,7 +24,7 @@ function Square(game, squad){
 	this.dead = false;
 
 	if(this.squad)
-		this.allied = this.squad.allied
+		this.allied = this.squad.allied;
 	else
 		this.allied = false;
 	this.following = false;

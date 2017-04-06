@@ -21,6 +21,7 @@ function Game(){
 
 	this.entities = [];
 	this.selectedEntities = [];
+	this.hud = new Hud(this);
 
 	this.player = new Squad(this, true);
 }
@@ -42,6 +43,8 @@ Game.prototype.update = function(){
 Game.prototype.draw = function(context) {
 	for(var e in this.entities)
 		this.entities[e].draw(context);
+
+	this.hud.draw(context);
 };
 
 Game.prototype.handleLeftClick = function(x, y, w, h){
