@@ -1,0 +1,26 @@
+body {
+	margin : 0;
+	padding : 0;
+	background-color: black;
+}
+
+.abs {
+	position:absolute;
+}
+
+#mapCanvas {
+	/*border : solid 2px green;*/
+
+}
+
+#spriteCanvas {
+	/*border : solid 2px blue;*/
+}
+
+#hudCanvas {
+	position : fixed;
+	/*border : solid 2px red;*/
+  top: -moz-calc(100% - 200px);
+  top: -webkit-calc(100% - 200px);
+  top: calc(100% - 200px);
+}

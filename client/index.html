@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini STR</title>
+        <meta charset ="utf-8"/>
+
+        <script src="./js/util.js"></script>
+        <script src="./js/pathfinding.js"></script>
+        <script src="./maps/premiere.js"></script>
+        <script src="./unit/unites.js"></script>
+        <script src="./js/classes/button.js"></script>
+        <script src="./js/classes/camera.js"></script>
+        <script src="./js/classes/player.js"></script>
+        <script src="./js/classes/town.js"></script>
+        <script src="./js/classes/timer.js"></script>
+        <script src="./js/classes/hud.js"></script>
+        <script src="./js/classes/tileset.js"></script>
+        <script src="./js/classes/squad.js"></script>
+        <script src="./js/classes/game.js"></script>
+        <script src="./js/classes/mouseObj.js"></script>
+        <script src="./js/classes/square.js"></script>
+        <script src="./js/classes/map.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/pathfinding.js"></script>
+
+        <script src="../socket.io/socket.io.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="./css/basic.css" />
+    </head>
+    <body>
+        <canvas class = "abs" id="mapCanvas" width="1920" height="1080">
+            Message pour les navigateurs ne supportant pas encore canvas.
+        </canvas>
+        <!-- <canvas class = "abs" id="spriteCanvas" width="1920" height="1080"> -->
+            <!-- Message pour les navigateurs ne supportant pas encore canvas. -->
+        <!-- </canvas> -->
+        <canvas id="hudCanvas" width="1920" height="200">
+            Message pour les navigateurs ne supportant pas encore canvas.
+        </canvas>
+        <script>
+            var socket = io.connect();
+
+            pseudo = prompt();
+            if(pseudo === null || pseudo === "") pseudo ="anonyme";
+            socket.emit('pseudo',pseudo);
+
+            socket.on('bonjour', function(bonjour){
+                console.log(bonjour);
+            });
+
+            socket.on('disconnect', function (disconnect_mess){
+                console.log("Deconnexion d'un joueur");
+                console.log(disconnect_mess);
+            });
+
+        </script>
+    </body>
+</html>
